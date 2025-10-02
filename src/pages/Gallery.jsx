@@ -35,87 +35,87 @@ export default function Gallery() {
     {
       id: generateUUID(),
       type: "video",
-      url: video2
+      url: video2,
     },
     {
       id: generateUUID(),
       type: "image",
-       url: Image1
+      url: Image1,
     },
     {
       id: generateUUID(),
       type: "video",
-       url: video3
+      url: video3,
     },
-     {
+    {
       id: generateUUID(),
       type: "image",
-       url: Image2
+      url: Image2,
     },
     {
       id: generateUUID(),
       type: "video",
-      url: video4
+      url: video4,
     },
-     {
+    {
       id: generateUUID(),
       type: "image",
-       url: Image3
+      url: Image3,
     },
     {
       id: generateUUID(),
       type: "video",
-        url: video5
+      url: video5,
     },
-     {
+    {
       id: generateUUID(),
       type: "image",
-       url: Image4
+      url: Image4,
     },
     {
       id: generateUUID(),
       type: "video",
-      url: video6
+      url: video6,
     },
-     {
+    {
       id: generateUUID(),
       type: "image",
-       url: Image5
+      url: Image5,
     },
-     {
+    {
       id: generateUUID(),
       type: "video",
-      url: video7
+      url: video7,
     },
-     {
+    {
       id: generateUUID(),
       type: "image",
-       url: Image6
+      url: Image6,
     },
-     {
+    {
       id: generateUUID(),
       type: "video",
-      url: video8
+      url: video8,
     },
-      {
+    {
       id: generateUUID(),
       type: "image",
-       url: Image7
+      url: Image7,
     },
-     {
+    {
       id: generateUUID(),
       type: "video",
-      url: video1
+      url: video1,
     },
-      {
+    {
       id: generateUUID(),
       type: "image",
-       url: Image8
+      url: Image8,
     },
-      {
+    {
       id: generateUUID(),
       type: "video",
-      url: video9
+      url: video9,
     },
   ]);
 
