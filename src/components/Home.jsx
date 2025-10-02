@@ -31,6 +31,10 @@ export default function Home() {
 
       {/* Overlay Hero Content */}
       <div className="mt-32 md:mt-40 relative text-center max-w-xl sm:max-w-2xl md:max-w-4xl bg-gray-900/70 backdrop-blur-md p-8 sm:p-12 md:p-16 rounded-2xl border-4 border-orange-500/70 shadow-[0_0_50px_rgba(234,88,12,0.7)] md:shadow-[0_0_80px_rgba(234,88,12,0.8)] transform hover:scale-[1.01] transition duration-700 ease-in-out">
+        {/* Founded Year */}
+        <p className="text-sm sm:text-md font-extrabold text-orange-400 mb-2 sm:mb-4 uppercase tracking-[0.2em] sm:tracking-[0.3em] opacity-80 transition hover:opacity-100 duration-300">
+          Established in 1996
+        </p>
         <p className="text-sm sm:text-md font-extrabold text-orange-400 mb-2 sm:mb-4 uppercase tracking-[0.2em] sm:tracking-[0.3em] animate-pulse">
           Precision | Strength | Durability
         </p>

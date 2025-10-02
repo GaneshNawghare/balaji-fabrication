@@ -11,7 +11,7 @@ export default function App() {
       <div className="min-h-screen bg-gray-100 font-sans">
         <Navbar />
 
-        <main className="pb-12">
+        <main className="">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/gallery" element={<Gallery />} />
