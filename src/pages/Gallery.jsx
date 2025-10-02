@@ -1,18 +1,23 @@
 import React, { useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import video1 from "../assets/videos/WhatsAppVideo2025-10-02at8.15.43PM.mp4";
+import video10 from "../assets/videos/whatsapp10.mp4";
 import video2 from "../assets/videos/whatsapp1.mp4";
 import video3 from "../assets/videos/whatsapp2.mp4";
 import video4 from "../assets/videos/whatsapp3.mp4";
 import video5 from "../assets/videos/whatsapp4.mp4";
 import video6 from "../assets/videos/whatsapp5.mp4";
 import video7 from "../assets/videos/whatsapp6.mp4";
+import video8 from "../assets/videos/whatsapp7.mp4";
+import video1 from "../assets/videos/whatsapp8.mp4";
+import video9 from "../assets/videos/whatsapp9.mp4";
 import Image1 from "../assets/images/whatsapp1.png";
 import Image2 from "../assets/images/whatsapp2.png";
 import Image3 from "../assets/images/whatsapp3.png";
 import Image4 from "../assets/images/whatsapp4.png";
 import Image5 from "../assets/images/whatsapp5.png";
 import Image6 from "../assets/images/whatsapp6.png";
+import Image7 from "../assets/images/whatsapp7.png";
+import Image8 from "../assets/images/whatsapp8.png";
 
 const generateUUID = () => {
   if (typeof crypto !== "undefined" && crypto.randomUUID)
@@ -26,7 +31,7 @@ const generateUUID = () => {
 
 export default function Gallery() {
   const [media, setMedia] = useState([
-    { id: generateUUID(), type: "video", url: video1 },
+    { id: generateUUID(), type: "video", url: video10 },
     {
       id: generateUUID(),
       type: "video",
@@ -87,11 +92,31 @@ export default function Gallery() {
       type: "image",
        url: Image6
     },
-    //  {
-    //   id: generateUUID(),
-    //   type: "video",
-    //   url: video8
-    // },
+     {
+      id: generateUUID(),
+      type: "video",
+      url: video8
+    },
+      {
+      id: generateUUID(),
+      type: "image",
+       url: Image7
+    },
+     {
+      id: generateUUID(),
+      type: "video",
+      url: video1
+    },
+      {
+      id: generateUUID(),
+      type: "image",
+       url: Image8
+    },
+      {
+      id: generateUUID(),
+      type: "video",
+      url: video9
+    },
   ]);
 
   return (
