@@ -1,13 +1,16 @@
 {
   "files": {
     "main.css": "/balaji-fabrication/static/css/main.ce651cf6.css",
-    "main.js": "/balaji-fabrication/static/js/main.f56f9a18.js",
+    "main.js": "/balaji-fabrication/static/js/main.84070968.js",
     "static/js/453.f1d1e2fe.chunk.js": "/balaji-fabrication/static/js/453.f1d1e2fe.chunk.js",
-    "static/media/WhatsAppVideo2025-10-02at8.15.43PM.mp4": "/balaji-fabrication/static/media/WhatsAppVideo2025-10-02at8.15.43PM.7149f4f21839b2164009.mp4",
+    "static/media/whatsapp8.mp4": "/balaji-fabrication/static/media/whatsapp8.c219c78f4c4b0442b6f2.mp4",
+    "static/media/whatsapp10.mp4": "/balaji-fabrication/static/media/whatsapp10.7149f4f21839b2164009.mp4",
+    "static/media/whatsapp9.mp4": "/balaji-fabrication/static/media/whatsapp9.102d0271f5658114180e.mp4",
     "static/media/whatsapp2.mp4": "/balaji-fabrication/static/media/whatsapp2.5cf1c4698ec46c6a89e4.mp4",
     "static/media/whatsapp3.mp4": "/balaji-fabrication/static/media/whatsapp3.5dd7f9b42b2b8708cf2d.mp4",
     "static/media/whatsapp6.mp4": "/balaji-fabrication/static/media/whatsapp6.a7dc07c8d154136dd3ab.mp4",
     "static/media/whatsapp5.mp4": "/balaji-fabrication/static/media/whatsapp5.ff297d9ceb5f2cd42598.mp4",
+    "static/media/whatsapp7.mp4": "/balaji-fabrication/static/media/whatsapp7.bcca27e77fc9bfe251b9.mp4",
     "static/media/whatsapp4.mp4": "/balaji-fabrication/static/media/whatsapp4.cc1044a5b5cb16d7b334.mp4",
     "static/media/Industrial-Welding-in-Action.png": "/balaji-fabrication/static/media/Industrial-Welding-in-Action.7cdfb7dbef64bd50388f.png",
     "static/media/whatsapp1.mp4": "/balaji-fabrication/static/media/whatsapp1.a5a789df8852e476d6f0.mp4",
@@ -17,7 +20,9 @@
     "static/media/whatsapp3.png": "/balaji-fabrication/static/media/whatsapp3.23be6c2e2097edda7001.png",
     "static/media/whatsapp1.png": "/balaji-fabrication/static/media/whatsapp1.18d6c19308156896f635.png",
     "static/media/whatsapp2.png": "/balaji-fabrication/static/media/whatsapp2.82b0404b4be3477f7a66.png",
+    "static/media/whatsapp8.png": "/balaji-fabrication/static/media/whatsapp8.97b9b7a0dbc03b54e509.png",
     "static/media/whatsapp4.png": "/balaji-fabrication/static/media/whatsapp4.93ed7cb0601315b6a057.png",
+    "static/media/whatsapp7.png": "/balaji-fabrication/static/media/whatsapp7.93ed7cb0601315b6a057.png",
     "static/media/whatsapp6.png": "/balaji-fabrication/static/media/whatsapp6.5bb368dd9eaf5bc10092.png",
     "static/media/two-welders0working-on-a-metal-fabrication.png": "/balaji-fabrication/static/media/two-welders0working-on-a-metal-fabrication.3ca56de7f774fe57286a.png",
     "static/media/SMF_blog_header_Oct-1-1-725w.png": "/balaji-fabrication/static/media/SMF_blog_header_Oct-1-1-725w.7b7d822170b8c752aa63.png",
@@ -28,11 +33,11 @@
     "static/media/slick.woff": "/balaji-fabrication/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/balaji-fabrication/index.html",
     "main.ce651cf6.css.map": "/balaji-fabrication/static/css/main.ce651cf6.css.map",
-    "main.f56f9a18.js.map": "/balaji-fabrication/static/js/main.f56f9a18.js.map",
+    "main.84070968.js.map": "/balaji-fabrication/static/js/main.84070968.js.map",
     "453.f1d1e2fe.chunk.js.map": "/balaji-fabrication/static/js/453.f1d1e2fe.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ce651cf6.css",
-    "static/js/main.f56f9a18.js"
+    "static/js/main.84070968.js"
   ]
 }
