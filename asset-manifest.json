@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/balaji-fabrication/static/css/main.ce651cf6.css",
-    "main.js": "/balaji-fabrication/static/js/main.f0fcfe7c.js",
+    "main.js": "/balaji-fabrication/static/js/main.f56f9a18.js",
     "static/js/453.f1d1e2fe.chunk.js": "/balaji-fabrication/static/js/453.f1d1e2fe.chunk.js",
     "static/media/WhatsAppVideo2025-10-02at8.15.43PM.mp4": "/balaji-fabrication/static/media/WhatsAppVideo2025-10-02at8.15.43PM.7149f4f21839b2164009.mp4",
     "static/media/whatsapp2.mp4": "/balaji-fabrication/static/media/whatsapp2.5cf1c4698ec46c6a89e4.mp4",
@@ -28,11 +28,11 @@
     "static/media/slick.woff": "/balaji-fabrication/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/balaji-fabrication/index.html",
     "main.ce651cf6.css.map": "/balaji-fabrication/static/css/main.ce651cf6.css.map",
-    "main.f0fcfe7c.js.map": "/balaji-fabrication/static/js/main.f0fcfe7c.js.map",
+    "main.f56f9a18.js.map": "/balaji-fabrication/static/js/main.f56f9a18.js.map",
     "453.f1d1e2fe.chunk.js.map": "/balaji-fabrication/static/js/453.f1d1e2fe.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ce651cf6.css",
-    "static/js/main.f0fcfe7c.js"
+    "static/js/main.f56f9a18.js"
   ]
 }
