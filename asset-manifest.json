@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/balaji-fabrication/static/css/main.ce651cf6.css",
+    "main.js": "/balaji-fabrication/static/js/main.0119fdd4.js",
+    "static/js/453.f1d1e2fe.chunk.js": "/balaji-fabrication/static/js/453.f1d1e2fe.chunk.js",
+    "static/media/Industrial-Welding-in-Action.png": "/balaji-fabrication/static/media/Industrial-Welding-in-Action.7cdfb7dbef64bd50388f.png",
+    "static/media/Labourer-arc-welding.png": "/balaji-fabrication/static/media/Labourer-arc-welding.7a2e9e1931d48233e523.png",
+    "static/media/cover-fabrication-welding.png": "/balaji-fabrication/static/media/cover-fabrication-welding.4038e98c06d1111321d9.png",
+    "static/media/two-welders0working-on-a-metal-fabrication.png": "/balaji-fabrication/static/media/two-welders0working-on-a-metal-fabrication.3ca56de7f774fe57286a.png",
+    "static/media/SMF_blog_header_Oct-1-1-725w.png": "/balaji-fabrication/static/media/SMF_blog_header_Oct-1-1-725w.7b7d822170b8c752aa63.png",
+    "static/media/metal-fabrication-welding-lg.png": "/balaji-fabrication/static/media/metal-fabrication-welding-lg.5bf7603350246090b3e5.png",
+    "static/media/slick.svg": "/balaji-fabrication/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/balaji-fabrication/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/balaji-fabrication/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/balaji-fabrication/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/balaji-fabrication/index.html",
+    "main.ce651cf6.css.map": "/balaji-fabrication/static/css/main.ce651cf6.css.map",
+    "main.0119fdd4.js.map": "/balaji-fabrication/static/js/main.0119fdd4.js.map",
+    "453.f1d1e2fe.chunk.js.map": "/balaji-fabrication/static/js/453.f1d1e2fe.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ce651cf6.css",
+    "static/js/main.0119fdd4.js"
+  ]
+}
