@@ -1,92 +1,150 @@
-import React, { useState, useEffect, useCallback } from "react";
-import { ChevronLeft, ChevronRight, UploadCloud } from "lucide-react";
+import React, { useState } from "react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
+import video1 from "../assets/videos/WhatsAppVideo2025-10-02at8.15.43PM.mp4";
+import video2 from "../assets/videos/whatsapp1.mp4";
+import video3 from "../assets/videos/whatsapp2.mp4";
+import video4 from "../assets/videos/whatsapp3.mp4";
+import video5 from "../assets/videos/whatsapp4.mp4";
+import video6 from "../assets/videos/whatsapp5.mp4";
+import video7 from "../assets/videos/whatsapp6.mp4";
+import Image1 from "../assets/images/whatsapp1.png";
+import Image2 from "../assets/images/whatsapp2.png";
+import Image3 from "../assets/images/whatsapp3.png";
+import Image4 from "../assets/images/whatsapp4.png";
+import Image5 from "../assets/images/whatsapp5.png";
+import Image6 from "../assets/images/whatsapp6.png";
 
 const generateUUID = () => {
-  if (typeof crypto !== 'undefined' && crypto.randomUUID) return crypto.randomUUID();
-  return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, c => {
-    const r = Math.random() * 16 | 0, v = c === 'x' ? r : (r & 0x3 | 0x8);
+  if (typeof crypto !== "undefined" && crypto.randomUUID)
+    return crypto.randomUUID();
+  return "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g, (c) => {
+    const r = (Math.random() * 16) | 0,
+      v = c === "x" ? r : (r & 0x3) | 0x8;
     return v.toString(16);
   });
 };
 
 export default function Gallery() {
-  const [images, setImages] = useState([
-    { id: generateUUID(), url: "https://placehold.co/800x500/374151/f3f4f6?text=Welding+Structure+1" },
-    { id: generateUUID(), url: "https://placehold.co/800x500/1f2937/f3f4f6?text=Industrial+Equipment" },
-    { id: generateUUID(), url: "https://placehold.co/800x500/374151/f3f4f6?text=Custom+Railings" },
-    { id: generateUUID(), url: "https://placehold.co/800x500/1f2937/f3f4f6?text=Fabricated+Component" },
+  const [media, setMedia] = useState([
+    { id: generateUUID(), type: "video", url: video1 },
+    {
+      id: generateUUID(),
+      type: "video",
+      url: video2
+    },
+    {
+      id: generateUUID(),
+      type: "image",
+       url: Image1
+    },
+    {
+      id: generateUUID(),
+      type: "video",
+       url: video3
+    },
+     {
+      id: generateUUID(),
+      type: "image",
+       url: Image2
+    },
+    {
+      id: generateUUID(),
+      type: "video",
+      url: video4
+    },
+     {
+      id: generateUUID(),
+      type: "image",
+       url: Image3
+    },
+    {
+      id: generateUUID(),
+      type: "video",
+        url: video5
+    },
+     {
+      id: generateUUID(),
+      type: "image",
+       url: Image4
+    },
+    {
+      id: generateUUID(),
+      type: "video",
+      url: video6
+    },
+     {
+      id: generateUUID(),
+      type: "image",
+       url: Image5
+    },
+     {
+      id: generateUUID(),
+      type: "video",
+      url: video7
+    },
+     {
+      id: generateUUID(),
+      type: "image",
+       url: Image6
+    },
+    //  {
+    //   id: generateUUID(),
+    //   type: "video",
+    //   url: video8
+    // },
   ]);
-  const [currentSlide, setCurrentSlide] = useState(0);
-
-  const totalSlides = images.length;
-
-  const handleUpload = (e) => {
-    const files = Array.from(e.target.files);
-    const newImages = files.map((file) => ({ id: generateUUID(), url: URL.createObjectURL(file) }));
-    setImages(prev => [...prev, ...newImages]);
-    setCurrentSlide(images.length);
-  };
-
-  const nextSlide = useCallback(() => setCurrentSlide(prev => (prev + 1) % totalSlides), [totalSlides]);
-  const prevSlide = () => setCurrentSlide(prev => (prev - 1 + totalSlides) % totalSlides);
-
-  useEffect(() => {
-    if (totalSlides > 1) {
-      const interval = setInterval(nextSlide, 4500);
-      return () => clearInterval(interval);
-    }
-  }, [totalSlides, nextSlide]);
-
-  const currentImage = images[currentSlide];
 
   return (
-    <div className="mt-12 max-w-5xl mx-auto p-6 bg-white rounded-xl shadow-2xl">
-      <h2 className="text-3xl font-bold mb-8 text-center text-gray-800 border-b-2 border-orange-500 pb-2">
+    <div className="mt-8 px-4 sm:px-6 md:px-8 max-w-5xl mx-auto bg-white rounded-xl shadow-2xl">
+      <h2 className="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8 text-center text-gray-800 border-b-2 border-orange-500 pb-2">
         Our Work Portfolio
       </h2>
 
-      <div className="flex justify-center mb-8">
-        <label className="flex items-center justify-center px-4 py-2 bg-orange-500 text-white rounded-lg shadow-md hover:bg-orange-600 transition cursor-pointer font-medium">
-          <UploadCloud className="w-5 h-5 mr-2" />
-          Upload Your Project Images
-          <input type="file" multiple accept="image/*" onChange={handleUpload} className="hidden" />
-        </label>
-      </div>
-
-      <div className="relative w-full aspect-video rounded-xl overflow-hidden shadow-2xl border-4 border-gray-200">
-        {totalSlides === 0 ? (
-          <div className="flex items-center justify-center h-full text-gray-500 text-xl">
-            No images in the gallery. Please upload some!
+      <div className="max-h-[80vh] overflow-y-auto space-y-6 p-2 sm:p-4">
+        {media.length === 0 ? (
+          <div className="flex items-center justify-center h-full text-gray-500 text-base sm:text-lg">
+            No media in the gallery.
           </div>
         ) : (
-          <>
-            <img
-              key={currentImage.id}
-              src={currentImage.url}
-              alt={`Work Slide ${currentSlide + 1}`}
-              className="w-full h-full object-cover transition-opacity duration-700 animate-fadeIn"
-              onError={e => { e.target.onerror = null; e.target.src = "https://placehold.co/800x500/374151/f3f4f6?text=Image+Load+Error"; }}
-            />
-            <button onClick={prevSlide} className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-black/50 hover:bg-black/70 p-3 rounded-full text-white">
-              <ChevronLeft className="w-6 h-6" />
-            </button>
-            <button onClick={nextSlide} className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-black/50 hover:bg-black/70 p-3 rounded-full text-white">
-              <ChevronRight className="w-6 h-6" />
-            </button>
-            <div className="absolute bottom-4 left-0 right-0 flex justify-center space-x-2">
-              {images.map((_, index) => (
-                <div
-                  key={index}
-                  className={`w-3 h-3 rounded-full cursor-pointer transition-all ${index === currentSlide ? 'bg-orange-500 w-6' : 'bg-gray-400'}`}
-                  onClick={() => setCurrentSlide(index)}
+          media.map((item, idx) => (
+            <div
+              key={item.id}
+              className="relative w-full rounded-xl overflow-hidden shadow-2xl border-4 border-gray-200"
+            >
+              {item.type === "image" ? (
+                <img
+                  src={item.url}
+                  alt={`Media ${idx + 1}`}
+                  className="w-full object-contain"
+                  style={{ maxHeight: "80vh" }}
+                  onError={(e) => {
+                    e.target.onerror = null;
+                    e.target.src =
+                      "https://placehold.co/800x500/374151/f3f4f6?text=Image+Load+Error";
+                  }}
                 />
-              ))}
+              ) : (
+                <video
+                  src={item.url}
+                  controls
+                  className="w-full object-contain"
+                  style={{ maxHeight: "80vh" }}
+                />
+              )}
+
+              {/* Caption Overlay */}
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-gray-900/80 to-transparent p-2 sm:p-4 text-white text-xs sm:text-sm">
+                <p className="font-medium">
+                  {item.type === "image"
+                    ? `Image ${idx + 1}`
+                    : `Video ${idx + 1}`}
+                </p>
+                <p className="text-gray-300">
+                  A showcase of our high-quality fabrication work.
+                </p>
+              </div>
             </div>
-            <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-gray-900/80 to-transparent p-4 text-white">
-              <p className="text-lg font-medium">Project {currentSlide + 1} of {totalSlides}</p>
-              <p className="text-sm text-gray-300">A showcase of our high-quality fabrication work.</p>
-            </div>
-          </>
+          ))
         )}
       </div>
     </div>

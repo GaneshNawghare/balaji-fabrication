@@ -58,7 +58,7 @@ export default function Home() {
             100% { transform: translateX(-50%); }
           }
           .animate-scroll-lg {
-            animation: scroll-lg 40s linear infinite;
+            animation: scroll-lg 10s linear infinite;
           }
         `}
       </style>
