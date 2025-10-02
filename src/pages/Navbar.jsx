@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Hammer, Image as ImageIcon, Menu, X } from 'lucide-react';
+import { Hammer, Image as ImageIcon, Menu, X, Phone } from "lucide-react";
 
 export default function Navbar() {
   const location = useLocation();
@@ -12,9 +12,10 @@ export default function Navbar() {
       to={to}
       className={`
         flex items-center gap-2 px-3 py-2 rounded-lg font-semibold transition-all
-        ${currentPath === to
-          ? 'text-orange-500 bg-gray-800'
-          : 'text-gray-300 hover:text-orange-400 hover:bg-gray-800'
+        ${
+          currentPath === to
+            ? "text-orange-500 bg-gray-800"
+            : "text-gray-300 hover:text-orange-400 hover:bg-gray-800"
         }
       `}
       onClick={() => setIsOpen(false)} // close menu on link click
@@ -36,9 +37,27 @@ export default function Navbar() {
         </div>
 
         {/* Desktop Links */}
-        <div className="hidden md:flex gap-2 font-medium">
-          <NavLink to="/" Icon={Hammer}>Home</NavLink>
-          <NavLink to="/gallery" Icon={ImageIcon}>Gallery</NavLink>
+        <div className="hidden md:flex items-center gap-6 font-medium">
+          <div className="flex gap-2">
+            <NavLink to="/" Icon={Hammer}>
+              Home
+            </NavLink>
+            <NavLink to="/gallery" Icon={ImageIcon}>
+              Gallery
+            </NavLink>
+          </div>
+
+          {/* Contact Info */}
+          <a
+            href="tel:+9860888198"
+            className="flex items-center gap-3 text-gray-300 hover:text-orange-400 transition mt-2"
+          >
+            <Phone className="w-5 h-5 text-orange-500" />
+            <div className="flex flex-col text-sm">
+              <span className="font-semibold text-white">Satish Nawghare</span>
+              <span>+91 9860888198</span>
+            </div>
+          </a>
         </div>
 
         {/* Mobile Menu Button */}
@@ -52,9 +71,25 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden bg-gray-900 px-6 pb-4 flex flex-col gap-2">
-          <NavLink to="/" Icon={Hammer}>Home</NavLink>
-          <NavLink to="/gallery" Icon={ImageIcon}>Gallery</NavLink>
+        <div className="md:hidden bg-gray-900 px-6 pb-4 flex flex-col gap-4">
+          <NavLink to="/" Icon={Hammer}>
+            Home
+          </NavLink>
+          <NavLink to="/gallery" Icon={ImageIcon}>
+            Gallery
+          </NavLink>
+
+          {/* Contact Info for Mobile */}
+          <a
+            href="tel:+9860888198"
+            className="flex items-center gap-3 text-gray-300 hover:text-orange-400 transition mt-2"
+          >
+            <Phone className="w-5 h-5 text-orange-500" />
+            <div className="flex flex-col text-sm">
+              <span className="font-semibold text-white">Satish Nawghare</span>
+              <span>+91 9860888198</span>
+            </div>
+          </a>
         </div>
       )}
     </header>
