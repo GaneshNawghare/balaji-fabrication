@@ -10,7 +10,6 @@ export default function App() {
     <Router>
       <div className="min-h-screen bg-gray-100 font-sans">
         <Navbar />
-
         <main className="">
           <Routes>
             <Route path="/" element={<Home />} />
@@ -18,7 +17,6 @@ export default function App() {
             {/* Add more pages here if needed */}
           </Routes>
         </main>
-
         <Footer />
       </div>
     </Router>
